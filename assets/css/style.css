@@ -1,0 +1,22 @@
+/**
+03-JavaScript-Password-Generator
+
+ **/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&display=swap');
+ 
+/* Modify the backgorund color */ 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 56px;
+    background-color: rgb(33, 85, 61);
+  }
+  a,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+  }

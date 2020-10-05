@@ -12,7 +12,7 @@ body {
 }
 
 .text-muted{  
-  color: rgb(95, 8, 8);
+  color: #777;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

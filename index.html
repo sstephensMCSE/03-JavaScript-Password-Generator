@@ -10,32 +10,42 @@
 
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8" />    
+    <!-- Style links. Reset CSS and Style CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">    
+    <!-- Title -->
     <title>03-JavaScript-Password-Generator</title>
 </head>
 
 <body>
-    <header>
-        <!--- Header --->
-        <h1>Sean's Password Generator</h1>
-    </header>
-
+        <!-- wrapper to center the content -->
+        <div id="wrapper">
+            <header>
+                <h1>Password Generator</h1>
+            </header>
+            <!--This is the content area-->
+            <div id="content">
+                <h2>Generate a Password</h2>
+                <hr>
+                <!-- This is a readonly text area for output-->
+                <textarea readonly id="password" placeholder="Your Secure Password"
+                    aria-label="Generated Password"></textarea>
+                <hr>
+                <!-- This is the div for the buttons -->
+                <div id="btn">
+                    <!-- This is the generate password button -->
+                    <button id="generate">Generate
+                        Password</button>
+                    <!-- This is the copy button -->
+                    <button id="reset">Reset</button>
     
-    <!-- Main Section -->
-    <section>                
-        <p>Generate a Password</p>
-
-        <!-- I click the button to generate a password -->
-        <button onclick="passwordGen()">Generate Password!</button>
-
-        <p id="password"></p>
-        
-    </section>
-
-
-
+                </div>
+            </div>
+        </div>
+            
     <script>
+
         
         
         // I am presented with a series of prompts for password criteria
@@ -63,8 +73,6 @@
         // WHEN the password is generated
 
         // THEN the password is either displayed in an alert or written to the page
-
-
 
     </script>
     

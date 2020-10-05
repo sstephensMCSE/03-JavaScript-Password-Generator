@@ -2,21 +2,88 @@
 03-JavaScript-Password-Generator
 
  **/
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&display=swap');
- 
-/* Modify the backgorund color */ 
-
+/* Move down content because we have a fixed navbar that is 50px tall */
+/* Space out content a bit */
 body {
-    font-family: 'Open Sans', sans-serif;
-    padding-top: 56px;
-    background-color: rgb(33, 85, 61);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem;
   }
-  a,
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-weight: bold;
-    font-family: 'Oswald', sans-serif;
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border: .05rem solid #000000;
+}
+.jumbotron .btn {
+  padding: .75rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 3rem 0;
+}
+.marketing p + h4 {
+  margin-top: 1.5rem;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
   }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0, solid #000000;
+  }
+}
+
+textarea.form-control{
+  text-align: center;
+  margin: 2rem 0;
+}

@@ -8,78 +8,95 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-
 <head>
-    <meta charset="UTF-8" />    
-    <!-- Style links. Reset CSS and Style CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">    
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Style links. Reset CSS and Style CSS -->        
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+        
     <!-- Title -->
     <title>03-JavaScript-Password-Generator</title>
+
 </head>
-
+    
 <body>
-        <!-- Wrapper to center the content -->
-        <div id="wrapper">
-            <header>
-                <h1>Password Generator</h1>
-            </header>
-            <!-- Content -->
-            <div id="content">
-                <h2>Generate a Password</h2>
-                <hr>
-                <!-- Readonly output section -->
-                <textarea readonly id="password" placeholder="Your Secure Password"
-                    aria-label="Generated Password"></textarea>
-                <hr>
-                <!-- Button section -->
-                <div id="btn">
-                    <!-- Generate password -->
-                    <button id="generate">Generate
-                        Password</button>
-                    <!-- Reset button -->
-                    <button id="reset">Reset</button>
-    
-                </div>
-            </div>
+
+    <div class="container">
+        <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Reset Form<span class="sr-only">(current)</span></a>
+            </li>                
+            <li class="nav-item">
+                <a class="nav-link" href="#">Save to Clipboard</a>
+            </li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Password Generator</h3>
         </div>
-            
-    <script src="script.js">
 
-        
-        
-        // I am presented with a series of prompts for password criteria
-        
-        // WHEN prompted for password criteria
+        <div class="jumbotron">
+        <h1 class="display-3">Generate a Password</h1>
+        <div class="form-group">      
+            <textarea class="form-control" rows="3" placeholder="Your secure password" required></textarea>
+        </div>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Generate!</a></p>
+        </div>
 
-        // THEN I select which criteria to include in the password
+                <h4>Password length</h4>
+                <div class="form-group">
+                    <label for="pwlength">Password Length</label>
+                    <input type="number" class="form-control" id="pwlength" placeholder="8" min=8 max=15>                
+                </div>
 
-        // WHEN prompted for the length of the password
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        <h4>Include uppercase letters</h4>
+                    </label>
+                </div>
 
-        // THEN I choose a length of at least 8 characters and no more than 128 characters
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        <h4>Include lowercase letters</h4>
+                    </label>
+                </div>
 
-        // WHEN prompted for character types to include in the password
 
-        // THEN I choose lowercase, uppercase, numeric, and/or special characters
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        <h4>Include numbers</h4>
+                    </label>
+                </div>
 
-        // WHEN I answer each prompt
 
-        // THEN my input should be validated and at least one character type should be selected
 
-        // WHEN all prompts are answered
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        <h4>Include symbols</h4>
+                    </label>
+                </div>
 
-        // THEN a password is generated that matches the selected criteria
+        <footer class="footer">
+        <p>03-JavaScript-Password-Generator Bootcamp 2020</p>        
+        </footer>
 
-        // WHEN the password is generated
+    </div> <!-- /container -->
 
-        // THEN the password is either displayed in an alert or written to the page
+    <!-- Application code -->
+    <script src="script.js"></script>
 
-    </script>
-    
-    <!-- Footer -->
-    <footer>
-        <h2>03-JavaScript-Password-Generator Bootcamp 2020</h2>        
-    </footer>
+    <!-- Bootstrap Links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>

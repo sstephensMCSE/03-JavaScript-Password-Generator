@@ -1,6 +1,6 @@
 # Bootcamp Coursework
 
-## Unit 02 CSS and Bootstrap Homework: Responsive Portfolio
+## Unit 03 JavaScript Password Generator
 
 This is the second homework assignment for the Full Stack Developer bootcamp. This week we got familiar with bootstrap web framework. This homework is to demonstrate the technical coding capability and making the code accessibile. For this assignment I decided to create a pirate-themed website. I tried to incorporate as many features as possible that were reviewed during class.
 I made the Portfolio page have 3 break points SM-MD-XL so the images can be shown 1, 2, or 3 wide.

@@ -4,9 +4,15 @@
  **/
 /* Move down content because we have a fixed navbar that is 50px tall */
 /* Space out content a bit */
+
 body {
+  background-color: rgb(190, 194, 201);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.text-muted{  
+  color: rgb(95, 8, 8);
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -45,6 +51,7 @@ body {
 .container-narrow > hr {
   margin: 2rem 0;
 }
+
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -87,3 +94,5 @@ textarea.form-control{
   text-align: center;
   margin: 2rem 0;
 }
+
+

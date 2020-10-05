@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Style links. Reset CSS and Style CSS -->        
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
         
     <!-- Title -->
@@ -26,63 +26,65 @@
 
     <div class="container">
         <div class="header clearfix">
-        <nav>
-            <ul class="nav nav-pills float-right">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Reset Form<span class="sr-only">(current)</span></a>
-            </li>                
-            <li class="nav-item">
-                <a class="nav-link" href="#">Save to Clipboard</a>
-            </li>
-            </ul>
-        </nav>
-        <h3 class="text-muted">Password Generator</h3>
+            <nav>
+                <ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reset Form<span class="sr-only">(current)</span></a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Save to Clipboard</a>
+                </li>
+                </ul>                
+            </nav>   
+            <h3 class="text-muted">Password Generator</h3>     
         </div>
 
-        <div class="jumbotron">
-        <h1 class="display-3">Generate a Password</h1>
-        <div class="form-group">      
-            <textarea class="form-control" rows="3" placeholder="Your secure password" required></textarea>
-        </div>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Generate!</a></p>
-        </div>
 
-                <h4>Password length</h4>
-                <div class="form-group">
-                    <label for="pwlength">Password Length</label>
+    <div class="row">
+        <div class="col-8">
+            <div class="jumbotron">
+                <h2>Remember to keep your passwords safe.</h2>
+                <div class="form-group">      
+                    <textarea class="form-control" rows="3" placeholder="Your secure password" required></textarea>
+                </div>
+                <p><a class="btn btn-lg btn-success" href="#" role="button">Generate!</a></p>
+            </div>
+        </div>
+    
+        <div class="col-4">
+            <H4><u>Choose Options: </u></H4>            
+                <h5>Password length:</h5>
+                <div class="form-group">                    
                     <input type="number" class="form-control" id="pwlength" placeholder="8" min=8 max=15>                
                 </div>
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
-                        <h4>Include uppercase letters</h4>
+                        <h5>Include uppercase letters?</h5>
                     </label>
                 </div>
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
-                        <h4>Include lowercase letters</h4>
+                        <h5>Include lowercase letters?</h5>
                     </label>
                 </div>
-
-
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
-                        <h4>Include numbers</h4>
+                        <h5>Include numbers?</h5>
                     </label>
                 </div>
-
-
-
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
-                        <h4>Include symbols</h4>
+                        <h5>Include symbols?</h5>
                     </label>
                 </div>
+        </div>          
+    </div>
 
         <footer class="footer">
         <p>03-JavaScript-Password-Generator Bootcamp 2020</p>        

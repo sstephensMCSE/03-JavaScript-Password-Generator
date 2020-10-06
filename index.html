@@ -9,11 +9,10 @@
 <html lang="en-us">
 
 <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <!-- Style links. Reset CSS and Style CSS -->        
+    <!-- Style links -->        
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
         
@@ -28,11 +27,13 @@
         <div class="header clearfix">
             <nav>
                 <ul class="nav nav-pills float-right">
+                <!-- Reset the page -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Reset Form<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" onClick=window.location.reload();>Reset Form</a>
                 </li>                
+                <!-- Save to Clipboard -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Save to Clipboard</a>
+                    <a class="nav-link" id="clipboard">Save to Clipboard</a>
                 </li>
                 </ul>                
             </nav>   
@@ -41,45 +42,56 @@
 
 
     <div class="row">
-        <div class="col-8">
+        <!-- Create a responsive container for the jumbotron -->
+        <div class="col-lg-8 col-sm-12">
             <div class="jumbotron">
-                <h2>Remember to keep your passwords safe.</h2>
+                <!-- Random Message -->
+                <h2 rows="2" id=welcomeMessage></h2>
+                <!-- This is where the password will be displayed -->
                 <div class="form-group">      
-                    <textarea class="form-control" rows="3" placeholder="Your secure password" required></textarea>
+                    <textarea class="form-control" rows="3" placeholder="Your secure password" id="displayPassword" readonly></textarea>
                 </div>
-                <p><a class="btn btn-lg btn-success" href="#" role="button">Generate!</a></p>
+                <!-- Button to generate password -->
+                <p><a class="btn btn-lg btn-success" id="generatePassword" role="button">Generate!</a></p>
             </div>
         </div>
     
-        <div class="col-4">
+        <!-- Create a responsive container forthe options -->
+        <div class="col-lg-4 col-sm-12">
+            <!-- Present a series of prompts for password criteria -->
             <H4><u>Choose Options: </u></H4>            
                 <h5>Password length:</h5>
                 <div class="form-group">                    
-                    <input type="number" class="form-control" id="pwlength" placeholder="8" min=8 max=15>                
+                    <!-- length of at least 8 characters and no more than 128 characters -->
+                    <input type="number" class="form-control" id="optionLength" value="8" min=8 max=128>                
                 </div>
 
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
+                    <!-- optionUpper -->
+                    <input class="form-check-input" type="checkbox" value="" id="optionUpper">
+                    <!-- <label class="form-check-label" for="optionUpper"> -->
                         <h5>Include uppercase letters?</h5>
                     </label>
                 </div>
 
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
+                    <!-- optionLower -->
+                    <input class="form-check-input" type="checkbox" value="" id="optionLower">
+                    <!-- <label class="form-check-label" for="optionLower"> -->
                         <h5>Include lowercase letters?</h5>
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
+                    <!-- optionNumbers -->
+                    <input class="form-check-input" type="checkbox" value="" id="optionNumbers">
+                    <!-- <label class="form-check-label" for="optionNumbers"> -->
                         <h5>Include numbers?</h5>
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
+                    <!-- optionSymbols -->
+                    <input class="form-check-input" type="checkbox" value="" id="optionSymbols">
+                    <!-- <label class="form-check-label" for="optionSymbols"> -->
                         <h5>Include symbols?</h5>
                     </label>
                 </div>
@@ -92,7 +104,7 @@
 
     </div> <!-- /container -->
 
-    <!-- Application code -->
+    <!-- Call Application code -->
     <script src="script.js"></script>
 
     <!-- Bootstrap Links -->

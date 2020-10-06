@@ -1,39 +1,52 @@
-# Bootcamp Coursework
+# Bootcamp Coursework Week 3
 
 ## Unit 03 JavaScript Password Generator
 
-This is the second homework assignment for the Full Stack Developer bootcamp. This week we got familiar with bootstrap web framework. This homework is to demonstrate the technical coding capability and making the code accessibile. For this assignment I decided to create a pirate-themed website. I tried to incorporate as many features as possible that were reviewed during class.
-I made the Portfolio page have 3 break points SM-MD-XL so the images can be shown 1, 2, or 3 wide.
+This is the third homework assignment for the Full Stack Developer bootcamp. This week we got studied javascript. This homework is to demonstrate technical javascript coding capability while building on knowledge from past weeks. I tried to incorporate as many features as possible that were reviewed during class.
 
 
 ## Table of Contents
 
 * [Webpage](#Webpage)
-* [Features](#Features)
+* [Responsive-Features](#Responsive-Features)
+* [Javascript-Features](#Javascript-Features)
 * [Requirements](#Requirements)
 
 
 ## Webpage
-https://sstephensmcse.github.io/Sean_Responsive_Portfolio/
+https://sstephensmcse.github.io/03-JavaScript-Password-Generator/
 
 
-## Features
+## Responsive-Features
 
 Use the following semantic elements to define different parts of the web page:
 
-* A navbar
+* Bootstrap Grid
 * A responsive layout
-* Responsive images
+* Containers
+* CSS Media Query
+* Buttons
+* Nav Links
+* Forms
+
+## Javascript-Features
+
+* Array
+* Functions
+* EventListener
+* Boolean
+* Random Numbers
+* Alerts
 
 
 ## Requirements
 
 * Functional, deployed application
 * GitHub repository with README describing the project
-* Navbar must be consistent on each page.
-* Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
-* All links must work.
-* Must use semantic html.
+* presented with a series of prompts for password criteria
+* Select which criteria to include in the password
+* Length of at least 8 characters and no more than 128 characters.
+* Choose lowercase, uppercase, numeric, and/or special characters
 * Each page must have valid and correct HTML. (use a validation service)
-* Must contain your personalized information. (bio, name, images, links to social media, etc.)
-* Must properly utilize Bootstrap components and grid system.
+* Input should be validated and at least one character type should be selected
+* password is either displayed in an alert or written to the page.

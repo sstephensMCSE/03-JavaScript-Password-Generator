@@ -11,6 +11,7 @@ This is the third homework assignment for the Full Stack Developer bootcamp. Thi
 * [Responsive-Features](#Responsive-Features)
 * [Javascript-Features](#Javascript-Features)
 * [Requirements](#Requirements)
+* [Screenshots](#Screenshots)
 
 
 ## Webpage
@@ -50,3 +51,14 @@ Use the following semantic elements to define different parts of the web page:
 * Each page must have valid and correct HTML. (use a validation service)
 * Input should be validated and at least one character type should be selected
 * password is either displayed in an alert or written to the page.
+
+## Screenshots
+
+### Large
+<img src="https://github.com/sstephensMCSE/03-JavaScript-Password-Generator/blob/master/responsive_lg.jpg">
+
+### Medium
+<img src="https://github.com/sstephensMCSE/03-JavaScript-Password-Generator/blob/master/responsive_md.jpg">
+
+### Small
+<img src="https://github.com/sstephensMCSE/03-JavaScript-Password-Generator/blob/master/responsive_sm.jpg">
